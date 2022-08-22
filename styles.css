@@ -1,0 +1,103 @@
+:root {
+    /* Colors */
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+
+    /* Fonts */
+    --overpass: 'Overpass', sans-serif;
+    --fontSizeParagraph: 15px;
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--overpass);
+    background-color: var(--veryDarkBlue);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container {
+    background-color: var(--darkBlue);
+    border-radius: 20px;
+    padding: 40px;
+    height: 28rem;
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.imageBox {
+    background-color: var(--veryDarkBlue);
+    display: inline-flex;
+    border-radius: 50%;
+    height: 52px;
+    width: 52px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.cardParagraph {
+    color: var(--mediumGrey);
+    font-size: 1.1rem;
+    line-height: 150%;
+}
+
+.rateList {
+    display: flex; 
+    justify-content: space-evenly;       
+}
+
+.rateList div {
+    display: flex;
+    background-color: var(--veryDarkBlue);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--lightGrey);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.submitButton {
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 4px;
+    border-radius: 25px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
